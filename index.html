@@ -1,0 +1,227 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ad5e09f869.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pics/logo.jpg  " class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Developer</p>
+                <h1>Hi, i'm <span>Utkarsh</span><br>Pandey from India</h1>
+
+            </div>
+        </div>
+    </div>
+<!-- -----------about----------- -->
+    <div id="about">
+        <div class="container"> 
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pics/intro 2.jpg" >
+                </div>
+                <div class="about-col-2"> 
+                    <h1 class="sub-title">About me</h1>
+                    <p>"My name is Utkarsh Pandey. I graduated in July 2024 from FGIE T College. 
+                        I have skills in Java, Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA),
+                        problem-solving, frontend development, and SQL. As a fresher,
+                        I am currently seeking a job in the tech sector. I am passionate about technology, 
+                        possess leadership qualities, and am confident in my ability to learn quickly and adapt
+                        to new challenges."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>-programing language</li>
+                            <li><span>oops</span><br>-Object Oriented programing</li>
+                            <li><span>DSA</span><br>-Data Structure and Algorithms</li>
+                            <li><span>SQL</span><br>-Structured Query Language</li>
+                            <li><span>html & css</span><br>-basic frontend </li>
+                            <li><span>JavaScript</span><br>-programing language</li>
+                            <li><span>React.js</span><br>-JavaScript library</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                              <li><span>Coding Ninja (14/Sep/2023 - 15/Jan/2024)</span><br>• Clear Explanations: Simplify data structures and algorithms with relatable examples.
+                               <br> • Problem Solving: Guide students through coding challenges, offering multiple solutions.
+                                <br>• Feedback & Guidance: Review code, provide improvement tips, and suggest practice exercises
+                                </li>
+                            <li><span>OASIS (15/April/2023)</span><br>• Successfully completed 4-week program , in front-end deployment, and
+                                debugging techniques.<br>
+                                • In this internship we(team) made a generally projects on Calculator,
+                                Weather detection , Currency Converter, Temperature Converter</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.TECH ( CSE ) 2020-2024 </span><br>-FGIET College , Cum.gpa: 7.93/10.0 </li>
+                            <li><span>12th ( Internediate ) 2020 </span><br>-St. Xavier School ,79%</li>
+                            <li><span>10th ( High School ) 2018 </span><br>-St. Xavier School , 80.1%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                   <h2>Java Development</h2>
+                   <p>Write clean, efficient Java code for functions, OOPs, classes, and small modules
+                     that integrate into larger projects.</p>
+                    <a href="https://www.javatpoint.com/java-tutorial"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Build responsive, interactive websites and SPAs with HTML, CSS, JavaScript, and React</p>
+                     <a href="https://cloudinary.com/guides/front-end-development/front-end-development-the-complete-guide"> Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p>Design, manage, and optimize databases with SQL, including creating efficient queries, data modeling, and
+                        ensuring data integrity.</p>
+                     <a href="https://www.javatpoint.com/sql-tutorial"> Learn more</a>
+                 </div>
+            </div>
+        </div>
+        
+    </div>
+    <!----------------portfolio-------------  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+              <div class="work" >
+                <img src="pics/fake.png">
+                <div class="layer">
+                    <h3>FAKE NEWS DETECTION</h3>
+                    <p>Build a site with HTML, CSS, and js for article input, analyze
+                         text with Python and NLP and store data using MySQL or MongoDB. Uses Montimonial Algorithms.</p>
+                         <a href="https://github.com/utkarshpandey7171/FAKE-NEWS-DETECTION.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+               </div> 
+              <div class="work" >
+                <img src="pics/eon Music Player Logo (1).png">
+                <div class="layer">
+                    <h3>EON MUSIC PLAYER</h3>
+                    <p>Create a clean interface with HTML, CSS, and interactive controls (play, pause, volume) using JavaScript.</p>
+                         <a href="https://github.com/utkarshpandey7171/Eon-Music-Player-.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="work" >
+                <img src="pics/metro.png">
+                <div class="layer">
+                    <h3>THE METRO ROUTE</h3>
+                    <p>Developed software using graph theory and Dijkstra's algorithm for efficient and optimal metro route planning.</p>
+                         <a href="https://github.com/utkarshpandey7171/the-metro-route.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            
+            </div>
+              <a href="#" class="btn"> See More</a>
+        </div>
+    </div>
+    <!-- --------contacts--------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> utkarshpandey3009@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9935223499</p>
+                    <div class="social-icon"> 
+                        <a href="www.linkedin.com/in/utkarshpandey3009"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://leetcode.com/u/utkarsh7171/" ><i class="fa-solid fa-code"></i></a>
+                        <a href="https://github.com/utkarshpandey7171"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/utkarshpandey7171/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="pics/Utkarsh Pandey resume.pdf" download class="btn btn2"> Download CV</a>
+                </div>
+                
+            <div class="contact-right">
+                    <form class="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type ="submit"  class="btn btn2"> Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+              </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright (c) 2023, Utkarsh Pandey.</p>
+        </div>
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+     <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+
+     </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwrctpWi59YYfY7bFHGDlMgCc1Bcd-ZsF3WjhhXid_7u0UOLpK4kehN8CvsVKNkKuIkRQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => { 
+                msg.innerHTML = "Message sent succesfully!"
+                setTimeout(() => 
+                {msg.innerHTML =""},5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body> 
+</html>
